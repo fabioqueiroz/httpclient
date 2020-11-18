@@ -14,5 +14,4 @@ C:\Users\fabio\OneDrive\Desktop\All Projects\C#\HttpClientInNetCore\Starter file
 C:\Users\fabio\OneDrive\Desktop\All Projects\C#\HttpClientInNetCore\Starter files\Movies.Client\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
 C:\Users\fabio\OneDrive\Desktop\All Projects\C#\HttpClientInNetCore\Starter files\Movies.Client\bin\Debug\netcoreapp2.1\Movies.API.dll
 C:\Users\fabio\OneDrive\Desktop\All Projects\C#\HttpClientInNetCore\Starter files\Movies.Client\bin\Debug\netcoreapp2.1\Movies.API.pdb
-C:\Users\fabio\OneDrive\Desktop\All Projects\C#\HttpClientInNetCore\Starter files\Movies.Client\obj\Debug\netcoreapp2.1\Movies.Client.csproj.CoreCompileInputs.cache
 C:\Users\fabio\OneDrive\Desktop\All Projects\C#\HttpClientInNetCore\Starter files\Movies.Client\obj\Debug\netcoreapp2.1\Movies.Client.csproj.CopyComplete
