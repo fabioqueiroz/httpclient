@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v2.1": {
       "Movies.Client/1.0.0": {
         "dependencies": {
+          "Marvin.StreamExtensions": "1.2.0",
           "Microsoft.AspNetCore.JsonPatch": "2.1.1",
           "Microsoft.Extensions.DependencyInjection": "2.1.1",
           "Microsoft.Extensions.Logging.Console": "2.1.1",
@@ -59,6 +60,17 @@
           "lib/netstandard1.5/Castle.Core.dll": {
             "assemblyVersion": "4.0.0.0",
             "fileVersion": "4.3.1.0"
+          }
+        }
+      },
+      "Marvin.StreamExtensions/1.2.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "11.0.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Marvin.StreamExtensions.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
           }
         }
       },
@@ -1363,6 +1375,13 @@
       "sha512": "sha512-8Y/eTr6GTElAGV7eAmJuhfLhGdFpNvaNrQ9UQYDScziLmX+/BLGM+9eQr0IcdNDcPN0ADmbtwT6MgecGKy4obw==",
       "path": "castle.core/4.3.1",
       "hashPath": "castle.core.4.3.1.nupkg.sha512"
+    },
+    "Marvin.StreamExtensions/1.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-nQL8cvFQh/5amnz6jaxzufWcBTuADEY4gUxVu8CUGGJyJWCoSPGjLFAPEsi6aAp1ZvLeR6hyP+OtG9JUz2GJ4Q==",
+      "path": "marvin.streamextensions/1.2.0",
+      "hashPath": "marvin.streamextensions.1.2.0.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Authorization/1.0.3": {
       "type": "package",
