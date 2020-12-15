@@ -50,6 +50,45 @@ namespace Movies.Client
 
             serviceCollection.AddLogging();
 
+            // 1) basic
+            serviceCollection.AddHttpClient();
+
+            // 2) named 
+            serviceCollection.AddHttpClient("MoviesClient", client => 
+            {
+                client.BaseAddress = new Uri("http://localhost:57863");
+                client.Timeout = new TimeSpan(0, 0, 30);
+                client.DefaultRequestHeaders.Clear();
+            })
+            .ConfigurePrimaryHttpMessageHandler(handler =>
+            new HttpClientHandler()
+            {
+                AutomaticDecompression = System.Net.DecompressionMethods.GZip
+            });
+
+            // 3) typed
+
+            // 3.1) client configuration moved to the MoviesClient's constructor
+            //serviceCollection.AddHttpClient<MoviesClient>(client =>
+            //{
+            //    client.BaseAddress = new Uri("http://localhost:57863");
+            //    client.Timeout = new TimeSpan(0, 0, 30);
+            //    client.DefaultRequestHeaders.Clear();
+            //}
+            //).ConfigurePrimaryHttpMessageHandler(handler =>
+            //new HttpClientHandler()
+            //{
+            //    AutomaticDecompression = System.Net.DecompressionMethods.GZip
+            //});
+
+            // 3.2)
+            serviceCollection.AddHttpClient<MoviesClient>()
+                .ConfigurePrimaryHttpMessageHandler(handler =>
+                   new HttpClientHandler()
+                   {
+                       AutomaticDecompression = System.Net.DecompressionMethods.GZip
+                   });
+
             // register the integration service on our container with a 
             // scoped lifetime
 
