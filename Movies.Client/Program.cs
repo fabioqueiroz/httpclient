@@ -93,25 +93,25 @@ namespace Movies.Client
             // scoped lifetime
 
             // For the CRUD demos
-            serviceCollection.AddScoped<IIntegrationService, CRUDService>();
+            //serviceCollection.AddScoped<IIntegrationService, CRUDService>();
 
             // For the partial update demos
-            serviceCollection.AddScoped<IIntegrationService, PartialUpdateService>();
+            //serviceCollection.AddScoped<IIntegrationService, PartialUpdateService>();
 
             // For the stream demos
-            serviceCollection.AddScoped<IIntegrationService, StreamService>();
+            //serviceCollection.AddScoped<IIntegrationService, StreamService>();
 
             // For the cancellation demos
-            // serviceCollection.AddScoped<IIntegrationService, CancellationService>();
+            //serviceCollection.AddScoped<IIntegrationService, CancellationService>();
 
             // For the HttpClientFactory demos
-            // serviceCollection.AddScoped<IIntegrationService, HttpClientFactoryInstanceManagementService>();
+            //serviceCollection.AddScoped<IIntegrationService, HttpClientFactoryInstanceManagementService>();
 
             // For the dealing with errors and faults demos
-            // serviceCollection.AddScoped<IIntegrationService, DealingWithErrorsAndFaultsService>();
+            serviceCollection.AddScoped<IIntegrationService, DealingWithErrorsAndFaultsService>();
 
             // For the custom http handlers demos
-            // serviceCollection.AddScoped<IIntegrationService, HttpHandlersService>();     
+            //serviceCollection.AddScoped<IIntegrationService, HttpHandlersService>();     
         }
     }
 }
